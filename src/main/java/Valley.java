@@ -16,17 +16,9 @@ public class Valley{
         int deepest = slopes[0];
         int highest = slopes[0];
 
-        System.out.println(Arrays.toString(slopes));
-        System.out.println(slopes.length);
-        System.out.println(" ");
+
 
         for(int i = 1 ; i < slopes.length ; i++){
-
-            System.out.println(deepest);
-            System.out.println(highest);
-            System.out.println("");
-            System.out.println(Arrays.toString(toReturn));
-            System.out.println("");
 
 
             if( slopes[i] == slopes[i - 1] && slopes[i] == -1 ){
@@ -51,7 +43,6 @@ public class Valley{
             }
         }
         toReturn[0] = Math.abs(toReturn[0]);
-        System.out.println(Arrays.toString(toReturn));
 
         return toReturn;
     }
