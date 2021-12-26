@@ -10,7 +10,7 @@ public class BigDecimalTest {
         BigDecimal.parseExp(null, 0, 0);
     }
 
-    public void testArrayException() {
+    public void testArrayException() {//
         assertTrue(assertArrayException(new char[] {}, 0, 0));
         assertTrue(assertArrayException("1.1E1".toCharArray(), 3, 3));
         assertTrue(assertArrayException("1E1".toCharArray(), 1, 3));
