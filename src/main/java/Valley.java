@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class Valley{
 
@@ -19,7 +19,6 @@ public class Valley{
 
 
         for(int i = 1 ; i < slopes.length ; i++){
-
 
             if( slopes[i] == slopes[i - 1] && slopes[i] == -1 ){
                 System.out.println("down");
@@ -47,3 +46,13 @@ public class Valley{
         return toReturn;
     }
 }
+
+class Kervin {
+    public static void test(){
+        IntStream a = IntStream.range(0,12);
+
+    }
+
+}
+
+
